@@ -17,36 +17,37 @@
     <title>Travel-Agency</title>
   </head>
   <body>
-    <div class="container d-flex justify-content-between align-items-center">
-      <div class="d-flex align-items-center justify-content-center gap-2 my-2">
-        <h2 class="title">Trabook</h2>
-        <img
-          src="./img/Vector.svg"
-          alt="icono"
-          width="25"
-          height="25"
-          class="mb-2"
-        />
+    <header>
+      <div class="container d-flex justify-content-between align-items-center">
+        <div
+          class="d-flex align-items-center justify-content-center gap-2 my-2"
+        >
+          <h2 class="title">Trabook</h2>
+          <img
+            src="./img/Vector.svg"
+            alt="icono"
+            width="25"
+            height="25"
+            class="mb-2"
+          />
+        </div>
+
+        <ul class="nav link-container">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#destination">Destination</a></li>
+          <li><a href="#">Tour</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+
+        <div class="container-buttons">
+          <a href="#">Login</a>
+          <a class="btn" href="#">SignUp</a>
+        </div>
       </div>
+    </header>
 
-      <ul class="nav justify-content-center link-container">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Destination</a></li>
-        <li><a href="#">Tour</a></li>
-        <li><a href="#">Blog</a></li>
-      </ul>
-
-      <div class="container-buttons align-items-center">
-        <a href="#">Login</a>
-        <a class="btn" href="#">SignUp</a>
-      </div>
-    </div>
-
-    <section
-      class="container justify-content-center align-items-center mb-5"
-      id="#home"
-    >
+    <section class="container mb-5" id="#home">
       <div class="row align-items-center justify-content-center">
         <div class="col-lg-5 p-12 mx-auto">
           <h1 class="title-container">
@@ -86,22 +87,146 @@
         </div>
       </div>
     </section>
-    <main>
-      <section id="#about">
-        <div class="container">
-          <h1>Things you need <span class="highlighted">to do</span></h1>
-          <span class="">
-            We ensure that you’ll embark on a perfectly planned,<br />
-            safe vacation at a price you can afford.
-          </span>
 
-          <div class="row">
-            <div class="article col-lg-2">
-              <div class="card-services"></div>
+    <main>
+      <section id="about">
+        <div class="container my-4">
+          <div class="container-titles">
+            <h1>Things you need <span class="highlighted">to do</span></h1>
+            <span class="subtitle-text-section">
+              We ensure that you’ll embark on a perfectly planned,<br />
+              safe vacation at a price you can afford.
+            </span>
+          </div>
+          <div class="logo-container">
+            <img src="./img/airplanes.svg" alt="aviones" />
+          </div>
+          <div class="row d-flex justify-content-center align-items-center">
+            <div class="article col-lg-3 col-md-6 my-5">
+              <div class="card-services">
+                <img src="./img/icon_card1.svg" alt="icon" />
+                <h4>SignUp</h4>
+                <p>
+                  Completes all the work associated with planning and processing
+                </p>
+              </div>
+            </div>
+            <div class="article col-lg-3 col-md-6 my-5">
+              <div class="card-services">
+                <img src="./img/icon_card2.svg" alt="icon" />
+                <h4>Worth of Money</h4>
+                <p>
+                  After successful access then book from exclusive deals &
+                  pricing
+                </p>
+              </div>
+            </div>
+            <div class="article col-lg-3 col-md-6 my-5">
+              <div class="card-services">
+                <img src="./img/icon_card3.svg" alt="icon" />
+                <h4>Exciting Travel</h4>
+                <p>
+                  Start and explore a wide range of exciting travel experience.
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </section>
+
+      <section id="destination">
+        <div class="container">
+          <div class="container-titles">
+            <h1>
+              Exclusive <span class="highlighted">deals & discounts</span>
+            </h1>
+            <span class="subtitle-text-section">
+              Discover our fantastic early booking discounts <br />
+              & start planning your journey.
+            </span>
+          </div>
+
+          <div class="row d-flex justify-content-center align-items-center">
+            <div class="article col-lg-3 col-md-6 my-5">
+              <div class="card-deals">
+                <img src="./img/deals_1.jpg" alt="image_destination" />
+                <div class="info-detail">
+                  <p class="city">Madrid</p>
+                  <p class="calification">
+                    <i class="bx bxs-star"></i><span>4.8</span>
+                  </p>
+                </div>
+                <div class="detail-card">
+                  <p><i class="bx bx-map-pin"></i>Spain</p>
+                  <div>
+                    <span class="normal-price">$950</span>
+                    <span class="special-price">$850</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="article col-lg-3 col-md-6 my-5">
+              <div class="card-deals">
+                <img src="./img/deals_2.png" alt="image_destination" />
+                <div class="card-button"></div>
+                <div class="info-detail">
+                  <p class="city">Firenze</p>
+                  <p class="calification">
+                    <i class="bx bxs-star"></i><span>4.5</span>
+                  </p>
+                </div>
+                <div class="detail-card">
+                  <p><i class="bx bx-map-pin"></i>Itali</p>
+                  <div>
+                    <span class="normal-price">$850</span>
+                    <span class="special-price">$750</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="article col-lg-3 col-md-6 my-5">
+              <div class="card-deals">
+                <img src="./img/deals_3.png" alt="image_destination" />
+                <div class="card-button"></div>
+                <div class="info-detail">
+                  <p class="city">Paris</p>
+                  <p class="calification">
+                    <i class="bx bxs-star"></i><span>4.4</span>
+                  </p>
+                </div>
+                <div class="detail-card">
+                  <p><i class="bx bx-map-pin"></i>France</p>
+                  <div>
+                    <span class="normal-price">$699</span>
+                    <span class="special-price">$599</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="article col-lg-3 col-md-6 my-5">
+              <div class="card-deals">
+                <img src="./img/deals_4.jpg" alt="image_destination" />
+                <div class="card-button"></div>
+                <div class="info-detail">
+                  <p class="city">London</p>
+                  <p class="calification">
+                    <i class="bx bxs-star"></i><span>4.8</span>
+                  </p>
+                </div>
+                <div class="detail-card">
+                  <p><i class="bx bx-map-pin"></i>Uk</p>
+                  <div>
+                    <span class="normal-price">$950</span>
+                    <span class="special-price">$850</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section></section>
     </main>
   </body>
 </html>

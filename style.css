@@ -12,15 +12,23 @@
     --background-color: #CCCCCC;
     --color-text: #222222;
     --paragraph-color: #666666;
+    --special-background: #F7F8FC;
 }
 
+
+header{
+    display: block;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    background-color: #FFF;
+}
 
 body{
     background-color: var(--background-color);
-    font-family: "Poppins", sans-serif;
 }
-
-
 
 h1, h2{
     font-family: "Volkhov", sans-serif;
@@ -34,7 +42,10 @@ p{
 
 
 section{
-    padding: 6rem 0 0;
+    padding: 6.5rem 0 0;
+    width: 100%;
+    display: block;
+    margin-top: 2.5rem;
     
 }
 
@@ -158,7 +169,7 @@ li a{
     font-style: normal;
 }
 
-.bx{
+.bx-chevron-down{
     font-size: 22px;
     align-items: center;
     color: var(--primary-color);
@@ -184,12 +195,160 @@ li a{
 }
 
 
-.section-titles h1{
-    font-weight: 700;
-}
-
 .subtitle-container{
     line-height: 32px;
     padding: 12px;
     max-width: 33%;
+}
+
+#about{
+    width: 100%;
+    position: relative;
+    background-color: var(--special-background);
+    padding: 40px 0;
+}
+
+.container-titles{
+    text-align: center;
+}
+
+
+#about h1{
+    font-weight: 700;
+}
+
+.subtitle-text-section {
+    font-size: 17px;
+    color: var(--paragraph-color);
+    line-height: 32px;
+    text-align: center;
+}
+
+#about .row{
+    padding-top: 50px;
+}
+
+#about .card-services{
+    padding: 37px;
+    border: 2px solid rgba(102, 102, 102, 0.08);
+    border-radius: 8px;
+    margin: auto;
+    background-image: url("./img/linea_vector.svg");
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
+
+#about .card-services:hover{
+    background-color: #FFF;
+    box-shadow: 0px 2px 80px 2px rgba(0, 0, 0, 0.06);
+    transition: 0.5s ease-in-out;
+}
+
+
+.logo-container{
+    position: absolute;
+    top: 60px;
+    right: 200px;
+}
+
+.card-services img{
+    margin-bottom: 29px;
+}
+
+.card-services h4{
+    font-size: 24px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 18px;
+}
+
+.card-services p {
+    font-size: 16px;
+    color: var(--paragraph-color);
+    padding: 2px;
+}
+
+#destination h1{
+    font-weight: 700;
+}
+
+
+.card-deals img{
+    width: 100%;
+    object-fit: contain;
+}
+
+
+.card-deals{
+    border-radius: 8px;
+    border: 2px solid rgba(102, 102, 102, 0.08);
+    overflow: hidden;
+}
+
+.card-deals:hover{
+    transform: translateY(-15px);
+    transition: .5s ease-in-out;
+}
+
+.info-detail{
+    display: flex;
+    align-items: center;
+    margin: 15px;
+    justify-content: space-between;
+}
+
+.info-detail .city{
+    font-size: 24px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+}
+
+.info-detail .calification{
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    color: var(--paragraph-color);
+    gap: 7px;
+}
+.info-detail .bx {
+    color: #ffd700;
+    font-size: 16px;
+    gap: 5px;
+}
+
+.detail-card{
+    display: flex;
+    margin: 15px;
+    justify-content: space-between;
+}
+
+.detail-card p{
+    display: flex;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color: var(--paragraph-color);
+    gap: 7px;
+    align-items: center;
+}
+
+
+.detail-card .normal-price{
+    text-decoration: line-through;
+    font-size: 16px;
+    color: var(--paragraph-color);
+    font-family: "Poppins", sans-serif;
+}
+
+.detail-card .special-price{
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--primary-color);
+    font-family: "Poppins", sans-serif;
+    background-color: #FFE7DB;
+    border-radius: 8px;
+    padding: 5px;
+    margin-left: 5px;
 }
