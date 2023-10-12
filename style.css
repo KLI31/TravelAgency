@@ -448,3 +448,75 @@ li a{
     padding: 12px;
     border-radius: 50%;
 }
+
+
+.get-update{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+.pictures{
+    color: var(--paragraph-color);
+    font-size: 16px;
+}
+
+#blog h1{
+    font-weight: 700;
+}
+
+.footer{
+    margin: 12px;
+    border-bottom: 1px solid  rgba(153, 153, 153, 0.56);
+}
+
+
+.circle-button .bx{
+    background-color: white;
+    color: var(--color-text);
+    padding: 16px;
+    border-radius: 50%;
+    font-size: 20px; 
+    box-shadow: 3px 5px 14px -7px rgba(0,0,0,0.76);
+}
+
+.circle-button .bx:hover{
+    background-color: var(--primary-color);
+    transition: .5s ease;
+    color: white;
+}
+
+
+.footer-section li{
+    list-style: none;
+    line-height: 40px;
+    color: var(--paragraph-color);
+    font-size: 16px;
+}
+
+.footer-section p {
+    font-weight: 600;
+    color: var(--color-text);
+}
+
+.title-footer{
+    font-family: "Volkhov", sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+
+.subtitle-footer{
+    color: var(--paragraph-color);
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.icon-footer{
+    margin-bottom: 15px;
+    margin-left: 7px;
+}
+
+.text-footer{
+    color: var(--paragraph-color);
+}
